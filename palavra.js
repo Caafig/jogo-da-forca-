@@ -1,3 +1,4 @@
+
 const palavras = [{ word: "rio", clue: "Corpo de água que corre para o mar" },
 { word: "montanha", clue: "Elevação alta de terra" },
 { word: "livro", clue: "Objeto que contém páginas com textos" },

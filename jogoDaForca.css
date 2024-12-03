@@ -3,13 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-}
-#iconVoltar{
-  position: absolute;
-  width: 3%;
-  left: 1%;
-  top: 4%;
-}   
+} 
 body {
   position: absolute;
   display: flex;

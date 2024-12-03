@@ -1,3 +1,4 @@
+
 import { getWord } from "./palavra.js";
 
 const contentBtns = document.querySelector(".btns");
@@ -12,7 +13,7 @@ inic();
 
 function inic() {
   indexImg = 1;
-  img.src = img1.png;
+  img.src = `img1.png`;
 
   gerarpalavra();
   gerarBtns();
@@ -36,14 +37,14 @@ function gerarpalavra() {
     contentpalavraMisteriosa.appendChild(span);
   });
 
-  contentDica.textContent = Dica: ${clue};
+  contentDica.textContent = `Dica: ${clue}`;
 }
  
 
 
 function respostaErrada() {
   indexImg++;
-  img.src = img${indexImg}.png;
+  img.src = `img${indexImg}.png`;
 
   if (indexImg === 7) {
     alert("Você errou, tende de novo.");
@@ -52,7 +53,7 @@ function respostaErrada() {
 }
 
 function verificaLetra(letra, btn) {
-  const arr = document.querySelectorAll([word="${letra}"]);
+  const arr = document.querySelectorAll(`[word="${letra}"]`);
 
   if (!arr.length) {
     btn.style.backgroundColor = "#FF0000";
@@ -68,7 +69,7 @@ function verificaLetra(letra, btn) {
     });
   }
 
-  const spans = document.querySelectorAll(.palavraMisteriosa span);
+  const spans = document.querySelectorAll(`.palavraMisteriosa span`);
   const vencer = !Array.from(spans).find((span) => span.textContent === "_");
 
   if (vencer) {
@@ -107,3 +108,4 @@ function handleKeyPress(event) {
     }
   }
 }
+
